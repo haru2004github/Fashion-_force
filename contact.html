@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Force</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{-- dark mode  --}}
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+
+
+
+</head>
+<body class="font-sans">
+
+    <!-- Header start -->
+    <header class="shadow-md fixed bg-white top-0 left-0 w-full z-50">
+        <section class="flex justify-between items-center max-w-6xl mx-auto p-3 md:px-5 lg:px-10 md:py-5 lg:py-5">
+            <article>
+                <a href="./index.html" class="text-xl md:text-2xl font-bold ">
+                    <span class="text-blue-500">
+                        Fashion
+                    </span>
+                    <span class="text-slate-800">
+                        Force
+                    </span>
+                </a>
+            </article>
+            <article class="aside duration-300 absolute md:static top-0 -left-full bg-white w-[50%] md:w-auto md:h-auto h-screen shadow-xl md:shadow-none flex md:block justify-center items-center flex-col">
+                <ul class="flex-col md:flex-row flex items-center gap-y-8 md:gap-x-4 lg:gap-x-10 text-sm md:text-md font-medium text-slate-700">
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./about.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./">
+                            Shop
+                        </a>
+                    </li>
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <a href="./login.html" class="mt-8 md:hidden bg-blue-500/80 rounded-full text-white px-5 py-[5px] shadow-md duration-300 hover:bg-blue-600/80">
+                    Login
+                </a>
+            </article>
+            
+            <article class="text-md flex items-center gap-x-3">
+                <button class="showBtn duration-300 flex md:hidden justify-center items-center w-6 h-6 bg-blue-500/80 rounded-full">
+                    <i class="fas fa-bars text-white text-sm"></i>
+                </button>
+
+                <a href="./login.html" class="hidden md:block bg-blue-500/80 rounded-full text-white px-5 py-[5px] shadow-md duration-300 hover:bg-blue-600/80">
+                    Login
+                </a>
+            </article>
+        </section>
+    </header>
+    <!--  -->
+
+    <!-- content start -->
+    <main class="max-w-6xl mx-auto p-3 md:px-5 lg:px-10 md:py-5 lg:py-5 mt-12 md:mt-20">
+        <section>
+            <article>
+                <h1 class="text-blue-500 text-xl md:text-2xl font-bold text-center">
+                   Contact Us
+                </h1>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 lg:gap-8 mt-5">
+
+                    <!-- Phone Start  -->
+                    <div class="rounded-xl shadow-lg overflow-hidden p-5 flex justify-center border border-green-500/80">
+                        <div class="text-center flex flex-col justify-center items-center ">
+                            <a title="Click to call!" href="tel:09775590036" class="hover:rotate-[360deg] flex justify-center items-center w-14 h-14 rounded-full border border-green-500/80 bg-green  text-green-500/80 hover:text-white hover:bg-green-500/80 duration-300">
+                                <i class="icon fas fa-phone text-lg"></i>
+                            </a>
+                            <a title="Click to call!" class="text-sm md:text-md mt-1 md:mt-3 text-slate-600 font-medium border-2 border-transparent  hover:border-b-green-500/80 duration-300 " href="tel:09775590036">
+                                09775590036
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Phone End -->
+
+                    <!-- Email Start  -->
+                    <div class="rounded-xl shadow-lg overflow-hidden p-5 flex justify-center border border-violet-500/80 order-last col-span-2 md:col-span-1">
+                        <div class="text-center flex flex-col justify-center items-center ">
+                            <a title="Click to go gmail!" href="mailto:eishwesin945@gmail.com" class="hover:rotate-[360deg] flex justify-center items-center w-14 h-14 rounded-full border border-violet-500/80 bg-green  text-violet-500/80 hover:text-white hover:bg-violet-500/80 duration-300">
+                                <i class="icon fas fa-envelope text-xl"></i>
+                            </a>
+                            <a title="Click to go gmail!" class="text-sm md:text-md mt-1 md:mt-3 text-slate-600 font-medium border-2 border-transparent  hover:border-b-violet-500/80 duration-300 " href="mailto:eishwesin945@gmail.com">
+                                eishwesin945@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Email End -->
+
+                    <!-- Messenger Start  -->
+                    <div class="rounded-xl shadow-lg overflow-hidden p-5 flex justify-center border border-blue-500/80 ">
+                        <div class="text-center flex flex-col justify-center items-center ">
+                            <a target="_blank" title="Click to message!" href="https://www.facebook.com/messages/t/340564109649353" class="hover:rotate-[360deg] flex justify-center items-center w-14 h-14 rounded-full border border-blue-500/80 bg-blue  text-blue-500/80 hover:text-white hover:bg-blue-500/80 duration-300">
+                                <i class="icon fa-brands fa-facebook-messenger text-xl"></i>
+                            </a>
+                            <a target="_blank" title="Click to message!" class="text-sm md:text-md mt-1 md:mt-3 text-slate-600 font-medium border-2 border-transparent  hover:border-b-blue-500/80 duration-300 " href="https://www.facebook.com/messages/t/340564109649353">
+                                Page messenger
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Messenger End -->
+
+                </div>
+
+                
+            </article>
+
+            <article class="mt-10">
+                <h1 class="text-blue-500 text-xl md:text-2xl font-bold">
+                    Get In Touch
+                 </h1>
+                <div class="md:grid md:grid-cols-5 md:gap-5 lg:gap-8 mt-6">
+                    
+                    <!-- map start  -->
+                    <div class="shadow-lg rounded-xl overflow-hidden col-span-2 border border-slate-400/50 p-2 w-full">
+                        <div class="rounded-lg overflow-hidden border border-slate-400/50 h-full">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d637.2216588622674!2d96.12576898887393!3d16.82561639033977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c195e6c6ea5b13%3A0x2c03c24f499a8421!2sFashion%20Force!5e0!3m2!1sen!2smm!4v1692376698194!5m2!1sen!2smm" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <!-- map end -->
+
+                    <!-- Message start  -->
+                    <div class="mt-5 md:mt-0 shadow-lg rounded-xl overflow-hidden col-span-3 border border-slate-400/50 p-3 md:p-6">
+                        <form action="" method="Post">
+                            <div class="">
+                                <label class="text-slate-700 block text-sm" for="name">Full Name</label>
+                                <input class="focus:ring-1 focus:ring-blue-400/50 text-slate-800 focus:outline-none duration-300 text-sm w-full border border-slate-500/50 px-2 py-1 md:px-3 md:py-2 rounded-lg md:rounded-xl shadow-md" type="text" id="name" name="name" placeholder="Enter Your Full Name...">
+                            </div>
+
+                            <div class="mt-4 md:mt-6">
+                                <label class="text-slate-700 block text-sm" for="name">Gmail</label>
+                                <input class="focus:ring-1 focus:ring-blue-400/50 text-slate-800 focus:outline-none duration-300 text-sm w-full border border-slate-500/50 px-2 py-1 md:px-3 md:py-2 rounded-lg md:rounded-xl shadow-md" type="text" id="email" name="email" placeholder="example@gmail.com">
+                            </div>
+
+                            <div class="mt-4 md:mt-6">
+                                <label class="text-slate-700 block text-sm" for="phone">Phone</label>
+                                <input class="focus:ring-1 focus:ring-blue-400/50 text-slate-800 focus:outline-none duration-300 text-sm w-full border border-slate-500/50 px-2 py-1 md:px-3 md:py-2 rounded-lg md:rounded-xl shadow-md" type="number" id="phone" name="phone" placeholder="09*********">
+                            </div>
+
+                            <div class="mt-4 md:mt-6">
+                                <label class="text-slate-700 block text-sm" for="phone">Message</label>
+                                <textarea class="focus:ring-1 focus:ring-blue-400/50 text-slate-800  focus:outline-none duration-300 text-sm w-full border border-slate-500/50 px-2 py-1 md:px-3 md:py-2 rounded-lg md:rounded-xl shadow-md" name="message" id="message" cols="30" rows="5" placeholder="Text Here..."></textarea>
+                            </div>
+
+                            <div class="mt-4 md:mt-6">
+                                <button class="px-5 py-2 flex items-center gap-x-2 bg-blue-500 hover:bg-blue-600 duration-300 rounded-xl shadow-lg overflow-hidden text-white text-sm md:text-md">
+                                    <i class="fas fa-paper-plane text-sm md:text-md"></i>
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Message end -->
+
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- content end  -->
+
+    <!-- Footer start  -->
+    <footer class="py-5 border-t-[1px] border-slate-300 mt-6">
+        <div class="text-center text-xs md:text-sm text-slate-700 px-3">
+            <span >
+                Copyright &copy; 2023 All rights reserved | This template is made with <i class="fas fa-heart"></i> by
+            </span> 
+            <a target="_blank" href="https://portfolio-haru2004github.vercel.app/" class=" text-sm md:text-lg border-b-2 border-b-transparent hover:border-b-blue-500 duration-300 font-semibold text-blue-500">
+                Bone Pyae Sone
+            </a>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+</body>
+<script src="./app.js"></script>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Force</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{-- dark mode  --}}
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+
+
+<style>
+    .getInTouchBtn:hover .getInTouchBtn .fa-arrow-right{
+        transform: translateX(5px);
+    }
+</style>
+
+
+
+</head>
+<body class="font-sans flex flex-col justify-between min-h-screen dark:bg-slate-800">
+
+
+    <!-- Header start -->
+    <header class="shadow-md fixed bg-white top-0 left-0 w-full z-50">
+        <section class="flex justify-between items-center max-w-6xl mx-auto p-3 md:px-5 lg:px-10 md:py-5 lg:py-5">
+            <article>
+                <a href="./index.html" class="text-xl md:text-2xl font-bold ">
+                    <span class="text-blue-500">
+                        Fashion
+                    </span>
+                    <span class="text-slate-800">
+                        Force
+                    </span>
+                </a>
+            </article>
+            <article class="aside duration-300 absolute md:static top-0 -left-full bg-white w-[50%] md:w-auto md:h-auto h-screen shadow-xl md:shadow-none flex md:block justify-center items-center flex-col">
+                <ul class="flex-col md:flex-row flex items-center gap-y-8 md:gap-x-4 lg:gap-x-10 text-sm md:text-md font-medium text-slate-700">
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./about.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./">
+                            Shop
+                        </a>
+                    </li>
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <a href="./login.html" class="mt-8 md:hidden bg-blue-500/80 rounded-full text-white px-5 py-[5px] shadow-md duration-300 hover:bg-blue-600/80">
+                    Login
+                </a>
+            </article>
+            
+            <article class="text-md flex items-center gap-x-3">
+                <button class="showBtn duration-300 flex md:hidden justify-center items-center w-6 h-6 bg-blue-500/80 rounded-full">
+                    <i class="fas fa-bars text-white text-sm"></i>
+                </button>
+
+                <a href="./login.html" class="hidden md:block bg-blue-500/80 rounded-full text-white px-5 py-[5px] shadow-md duration-300 hover:bg-blue-600/80">
+                    Login
+                </a>
+            </article>
+        </section>
+    </header>
+    <!--  -->
+
+    <!-- content start -->
+    <main class="h-full w-full max-w-6xl mx-auto p-3 md:px-5 lg:px-10  md:py-5 lg:py-5 mt-12 md:mt-20">
+
+        <section class="grid grid-cols-2 py-10">
+            
+            <article class="flex items-center">
+                <div class="">
+                    <h1 class="text-clate-700 text-4xl font-bold max-w-lg">
+                        Hello,I'm Designer.
+                    </h1>
+                    <p class="mt-5 text-slate-500 max-w-lg text-lg ">
+                        I'm founder of "<span class="text-blue-500 font-semibold font-xl">Fashion Force</span>".Beginning in 2012, I've been actively involved in 'Fashion Force' until the present moment.
+                    </p>
+
+                    <div class="mt-8 flex items-center gap-x-6">
+                        <a href="./contact.html" class=" getInTouchBtn inline-block bg-blue-400 hover:bg-blue-500 duration-300 text-white px-5 py-2 rounded-xl shadow-lg text-lg font-semibold">
+                            Get in touch
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                        <div class="flex items-center gap-x-2">
+                            <a target="_blank" title="Facebook" href="" class="w-10 h-10 hover:rotate-[360deg] flex justify-center items-center rounded-full shadow-md bg-blue-400 hover:bg-blue-500 duration-300 text-white">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <a target="_blank" title="Messenger" href="" class="w-10 h-10 hover:rotate-[360deg] flex justify-center items-center rounded-full shadow-md bg-violet-400 hover:bg-violet-500 duration-300 text-white">
+                                <i class="fab fa-facebook-messenger"></i>
+                            </a>
+
+                            <a target="_blank" title="Linkin" href="" class="w-10 h-10 hover:rotate-[360deg] flex justify-center items-center rounded-full shadow-md bg-cyan-400 hover:bg-cyan-500 duration-300 text-white">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                            <a target="_blank" title="Instagram" href="" class="w-10 h-10 hover:rotate-[360deg] flex justify-center items-center rounded-full shadow-md bg-pink-400 hover:bg-pink-500 duration-300 text-white">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex justify-center items-center">
+                <!-- <div class="rounded-full w-[350px] h-[350px] border border-blue-500 overflow-hidden shadow-lg">
+                    <img class="w-full h-full object-cover object-center " src="https://scontent-sin6-4.xx.fbcdn.net/v/t39.30808-6/278542209_1613512349021183_8012774448977989719_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFW6bnZUFl_eh2fq9OG1u-PTwNUTndMa2tPA1ROd0xraylSM4W6QSjFZ9KR9aB34c2Oewv79OV6L-m5K6tu4cpH&_nc_ohc=9ipBnGgdXSsAX84dtNP&_nc_ht=scontent-sin6-4.xx&oh=00_AfCJB9MpRHtnD75LrRPbXOPoJk43b4XKAIOkLtr0hoBH6Q&oe=64E70F1B" alt=""> 
+                </div> -->
+
+                <div class="relative w-[350px] h-[350px]  shadow-lg before:absolute before:w-full before:h-full before:bg-gradient-to-r from-blue-300 to-blue-600 backdrop-blur-xl before:rounded-lg before:-z-10 rounded-lg before:translate-x-8 before:translate-y-8 before:opacity-50 ">
+                    <div class="rounded-lg overflow-hidden shadow-2xl">
+                        <img class="z-10 w-full h-full object-cover object-center " src="https://scontent-sin6-4.xx.fbcdn.net/v/t39.30808-6/278542209_1613512349021183_8012774448977989719_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFW6bnZUFl_eh2fq9OG1u-PTwNUTndMa2tPA1ROd0xraylSM4W6QSjFZ9KR9aB34c2Oewv79OV6L-m5K6tu4cpH&_nc_ohc=9ipBnGgdXSsAX84dtNP&_nc_ht=scontent-sin6-4.xx&oh=00_AfCJB9MpRHtnD75LrRPbXOPoJk43b4XKAIOkLtr0hoBH6Q&oe=64E70F1B" alt=""> 
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <!-- content end  -->
+
+    <!-- Footer start  -->
+    <footer class="py-5 border-t-[1px] border-slate-300 mt-6">
+        <div class="text-center text-xs md:text-sm text-slate-700 px-3">
+            <span >
+                Copyright &copy; 2023 All rights reserved | This template is made with <i class="fas fa-heart"></i> by
+            </span> 
+            <a target="_blank" href="https://portfolio-haru2004github.vercel.app/" class=" text-sm md:text-lg border-b-2 border-b-transparent hover:border-b-blue-500 duration-300 font-semibold text-blue-500">
+                Bone Pyae Sone
+            </a>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+</body>
+<script src="./app.js"></script>
+</html>
+

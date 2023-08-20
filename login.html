@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Force</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{-- dark mode  --}}
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <style>
+        .card:hover .profile{
+            transform: translateY(0);
+            opacity: 100;
+        }
+    </style>
+
+
+
+</head>
+<body class="font-sans flex flex-col justify-between min-h-screen overflow-hidden">
+
+    <!-- Header start -->
+    <header class="shadow-md fixed bg-white top-0 left-0 w-full z-50">
+        <section class="flex justify-between items-center max-w-6xl mx-auto p-3 md:px-5 lg:px-10 md:py-5 lg:py-5">
+            <article>
+                <a href="./index.html" class="text-xl md:text-2xl font-bold ">
+                    <span class="text-blue-500">
+                        Fashion
+                    </span>
+                    <span class="text-slate-800">
+                        Force
+                    </span>
+                </a>
+            </article>
+            <article class="aside duration-300 absolute md:static top-0 -left-full bg-white w-[50%] md:w-auto md:h-auto h-screen shadow-xl md:shadow-none flex md:block justify-center items-center flex-col">
+                <ul class="flex-col md:flex-row flex items-center gap-y-8 md:gap-x-4 lg:gap-x-10 text-sm md:text-md font-medium text-slate-700">
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./about.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./">
+                            Shop
+                        </a>
+                    </li>
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="mt-8 md:hidden bg-blue-500/80 rounded-full text-white px-5 py-[5px] shadow-md duration-300 hover:bg-blue-600/80">
+                    Login
+                </a>
+            </article>
+            
+            <article class="text-md flex items-center gap-x-3">
+                <button class="showBtn duration-300 flex md:hidden justify-center items-center w-6 h-6 bg-blue-500/80 rounded-full">
+                    <i class="fas fa-bars text-white text-sm"></i>
+                </button>
+
+                <a href="" class="hidden md:block bg-blue-500/80 rounded-full text-white px-5 py-[5px] shadow-md duration-300 hover:bg-blue-600/80">
+                    Login
+                </a>
+            </article>
+        </section>
+    </header>
+    <!--  -->
+
+    <!-- content start -->
+    <main class="max-w-6xl mx-auto p-3 md:px-5 lg:px-10 md:py-5 lg:py-5 mt-20 flex justify-center items-center ">
+        <section class="min-w-[350px] md:min-w-[500px] lg:max-w-4xl lg:grid lg:grid-cols-5">
+            
+            <div class="col-span-2 py-5 -mr-14 z-10 hidden lg:block">
+                <div class=" h-full w-full bg-transparent rounded-lg overflow-hidden shadow-lg ">
+                    <img class="w-full h-full object-cover object-center" src="https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/362279273_761099182692977_1190726637951954289_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGtn6pMZuEkdkX3Q-rwBFeMkm0cu6wtBnySbRy7rC0GfIIri1k6N729P4AVj1fKV8ewx23C2KDkE14pm2LgkWKg&_nc_ohc=w4IqAHRNCMAAX_8_YEZ&_nc_ht=scontent-sin6-3.xx&oh=00_AfBPDk86lZxivVY8kv2SlogpjljA6aYuR7kPIRDnsiQ--g&oe=64E72556">
+                    
+                </div>
+            </div>
+
+            <form class="card lg:col-span-3 shadow-lg p-3 md:p-5 lg:p-8 rounded-xl  border border-slate-400/50 flex justify-center items-center w-full lg:w-auto" action=""  method="Post">
+                <div class="lg:ml-14 w-full">
+
+                    <div class="relative profile flex justify-center -mt-[20%] opacity-0 translate-y-12 duration-300 animate-bounce before:w-6 before:h-6 md:before:w-10 md:before:h-10 before:bg-blue-500 before:-bottom-1 md:before:-bottom-3 before:absolute before:rotate-45 ">
+                        <div class="flex items-center justify-center w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full shadow-lg overflow-hidden bg-blue-500 text-white">
+                            <svg class="w-13 md:w-14 h-13 md:h-14" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 10c1.151 0 2-.848 2-2s-.849-2-2-2c-1.15 0-2 .848-2 2s.85 2 2 2zm0 1c-2.209 0-4 1.612-4 3.6v.386h8V14.6c0-1.988-1.791-3.6-4-3.6z"/><path fill="currentColor" d="M19 2H5c-1.103 0-2 .897-2 2v13c0 1.103.897 2 2 2h4l3 3l3-3h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm-5 15l-2 2l-2-2H5V4h14l.002 13H14z"/></svg>
+                        </div>
+                    </div>
+
+                    <h1 class="text-blue-500 text-xl md:text-2xl font-bold text-center mt-5">
+                        Login Your Account!
+                    </h1>
+
+                    <div class="mt-5 md:mt-8">
+                        <label class="text-slate-700 block text-sm md:text-md" for="emal">Email</label>
+                        <input class="focus:ring-1 focus:ring-blue-400/50 text-slate-800 focus:outline-none duration-300 text-sm md:text-md w-full border border-slate-500/50 px-2 py-1 md:px-3 md:py-2 rounded-lg shadow-md" type="email" id="email" name="email" placeholder="Example@gmail.com">
+                    </div>
+
+                    <div class="mt-4 md:mt-6 ">
+                        <label class="text-slate-700 block text-sm md:text-md" for="password">Password</label>
+                        <div class="flex items-center">
+                            <input class="focus:ring-1 focus:ring-blue-400/50 text-slate-800 focus:outline-none duration-300 text-sm md:text-md w-full border border-slate-500/50 px-2 py-1 md:px-3 md:py-2 rounded-l-lg shadow-md" type="password" id="password" name="password" placeholder="Password must be at least 8 characters...">
+                            <button onclick="showPass('password','showBtnOne')" type="button" id="showBtnOne" class="text-white duration-200 bg-blue-400 hover:bg-blue-500/80 flex justify-center items-center rounded-r-lg w-8 md:w-10 h-8 md:h-10 shadow-lg">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="text-center mt-8">
+                        <button class="w-full px-3 py-2 text-white bg-blue-500 hover:bg-blue-600 duration-300 rounded-lg shadow-lg text-center lg:text-lg md:text-md text-sm font-semibold">
+                            Login
+                        </button>
+                    </div>
+
+                    <h2 class="text-slate-700 text-sm text-center mt-8">
+                        You haven't any account!
+                        <a class="text-blue-500 hover:underline duration-300 text-md font-semibold" href="./signup.html">
+                            Sign Up
+                        </a>
+                    </h2>
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <!-- content end  -->
+
+    <!-- Footer start  -->
+    <footer class="py-3 md:py-5 border-t-[1px] border-slate-300 mt-6 bg-white w-full">
+        <div class="text-center text-xs md:text-sm text-slate-700 ">
+            <span >
+                Copyright &copy; 2023 All rights reserved | This template is made with <i class="fas fa-heart"></i> by
+            </span> 
+            <a target="_blank" href="https://portfolio-haru2004github.vercel.app/" class=" text-sm md:text-lg border-b-2 border-b-transparent hover:border-b-blue-500 duration-300 font-semibold text-blue-500">
+                Bone Pyae Sone
+            </a>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+</body>
+<script src="./app.js"></script>
+<script>
+    
+    function showPass(password,showBtn) {
+        let x = document.getElementById(password);
+        let showPassBtn = document.getElementById(showBtn);
+        let eyeIcon = document.querySelector('#' + showBtn + ' i');
+
+        if (x.type === "password") {
+            x.type = "text";
+            eyeIcon.classList.remove('fa-eye')
+            eyeIcon.classList.add('fa-eye-slash')
+            showPassBtn.classList.add('bg-red-400','hover:bg-red-500/80')
+            showPassBtn.classList.remove('bg-blue-400','hover:bg-blue-500/80')
+
+        } else {
+            let eyeIcon = document.querySelector('#' + showBtn + ' i');
+            x.type = "password";
+            eyeIcon.classList.remove('fa-eye-slash')
+            eyeIcon.classList.add('fa-eye')
+            showPassBtn.classList.remove('bg-red-400','hover:bg-red-500/80')
+            showPassBtn.classList.add('bg-blue-400','hover:bg-blue-500/80')
+
+
+        }
+      }
+</script>
+</html>
