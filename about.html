@@ -14,24 +14,24 @@
     </script>
 
 </head>
-<body class="font-sans flex flex-col justify-between min-h-screen dark:bg-slate-800 ">
+<body class="font-sans flex flex-col justify-between min-h-screen dark:bg-slate-900 ">
 
 
-    <!-- Header start -->
-    <header class="shadow-md fixed bg-white top-0 left-0 w-full z-50">
+     <!-- Header start -->
+     <header class="shadow-md fixed bg-white top-0 left-0 w-full z-50 dark:bg-slate-900">
         <section class="flex justify-between items-center max-w-6xl mx-auto p-3 md:px-5 lg:px-10 md:py-5 lg:py-5">
             <article>
                 <a href="./index.html" class="text-xl md:text-2xl font-bold ">
                     <span class="text-blue-500">
                         Fashion
                     </span>
-                    <span class="text-slate-800">
+                    <span class="text-slate-800 dark:text-slate-300">
                         Force
                     </span>
                 </a>
             </article>
-            <article class="aside duration-300 absolute md:static top-0 -left-full bg-white w-[50%] md:w-auto md:h-auto h-screen shadow-xl md:shadow-none flex md:block justify-center items-center flex-col">
-                <ul class="flex-col md:flex-row flex items-center gap-y-8 md:gap-x-4 lg:gap-x-10 text-sm md:text-md font-medium text-slate-700">
+            <article class="aside dark:bg-slate-900 duration-300 absolute md:static top-0 -left-full bg-white w-[55%] md:w-auto md:h-auto h-screen shadow-xl md:shadow-none flex md:block justify-center items-center flex-col">
+                <ul class="flex-col md:flex-row flex items-center gap-y-8 md:gap-x-4 lg:gap-x-10 text-sm md:text-md font-medium text-slate-700 dark:text-slate-200 dark:bg-slate-900">
                     <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
                         <a href="./index.html">
                             Home
@@ -59,6 +59,12 @@
             </article>
             
             <article class="text-md flex items-center gap-x-3">
+
+                <!-- Dark mode  -->
+                <button title="Change to dark mode." onclick="toggleTheme()" id="darkBtn"  class="cursor-pointer">
+                    <svg class="scale-[0.7] md:sclae-100 w-8 h-8 xl:w-9 xl:h-9" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 256 256"><path fill="currentColor" d="M116 32V16a12 12 0 0 1 24 0v16a12 12 0 0 1-24 0Zm80 96a68 68 0 1 1-68-68a68.07 68.07 0 0 1 68 68Zm-24 0a44 44 0 1 0-44 44a44.05 44.05 0 0 0 44-44ZM51.51 68.49a12 12 0 1 0 17-17l-12-12a12 12 0 0 0-17 17Zm0 119l-12 12a12 12 0 0 0 17 17l12-12a12 12 0 1 0-17-17ZM196 72a12 12 0 0 0 8.49-3.51l12-12a12 12 0 0 0-17-17l-12 12A12 12 0 0 0 196 72Zm8.49 115.51a12 12 0 0 0-17 17l12 12a12 12 0 0 0 17-17ZM44 128a12 12 0 0 0-12-12H16a12 12 0 0 0 0 24h16a12 12 0 0 0 12-12Zm84 84a12 12 0 0 0-12 12v16a12 12 0 0 0 24 0v-16a12 12 0 0 0-12-12Zm112-96h-16a12 12 0 0 0 0 24h16a12 12 0 0 0 0-24Z"/></svg>
+                </button>
+
                 <button class="showBtn duration-300 flex md:hidden justify-center items-center w-8 h-8 bg-blue-500/80 rounded-full">
                     <i class="fas fa-bars text-white text-sm"></i>
                 </button>
@@ -82,7 +88,7 @@
                 <div class="col-span-8 mt-8 md:mt-0 md:px-8">
                     <div class="">
                         <h1 class="text-slate-800 dark:text-slate-200 text-2xl md:text-3xl font-semibold headline">Who am I?</h1>
-                        <p class="max-w-3xl text-slate-700 mt-3 headline dark:text-slate-400">
+                        <p class="max-w-3xl text-slate-700 dark:text-slate-400  mt-3 headline dark:text-slate-400">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia velit quis maiores, fuga inventore nostrum natus non facere esse quam quo, provident alias est consequuntur assumenda exercitationem ut iste reiciendis.
                         </p>
                     </div>
@@ -91,51 +97,51 @@
                         <div class="mt-5 grid lg:grid-cols-2 gap-8">
                             <div class="flex items-center space-x-4 headline">
                                 <div class="">
-                                    <a title="Click to call!" href="tel:09775590036" class="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 duration-300 border border-green-500 text-green-500 hover:bg-green-500 hover:text-white shadow-md rounded-md dark:bg-slate-700">
+                                    <a title="Click to call!" href="tel:09775590036" class="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 duration-300 border border-green-500 text-green-500 hover:bg-green-500 hover:text-white shadow-md rounded-md ">
                                         <i class="fa-solid text-xl md:text-2xl fa-phone"></i>
                                     </a>
                                 </div>
                                 <div class="">
                                     <h1 class="text-slate-600 dark:text-slate-400 text-sm">Phone</h1>
                                     <h1>
-                                        <a title="Click to call!" class="font-semibold text-md md:text-lg text-slate-600 dark:text-slate-300 text-[18px] hover:underline duration-300" href="tel:09775590036">09775590036</a>
+                                        <a title="Click to call!" class="font-semibold text-md md:text-md text-slate-600 dark:text-slate-300 text-md hover:underline duration-300" href="tel:09775590036">09775590036</a>
                                     </h1>
                                 </div>
                             </div>
 
                             <div class="flex items-center space-x-4 headline ">
                                 <div class="">
-                                    <a title="Click to see map!" target="_blank" href="https://www.google.com/maps?ll=16.82563,96.12616&z=19&t=m&hl=en&gl=MM&mapclient=embed&cid=3171592208392029217" class="flex justify-center items-center duration-300 border border-red-500 w-10 h-10 md:w-14 md:h-14 text-red-500 shadow-md rounded-md hover:bg-red-500 hover:text-white  dark:bg-slate-700 ">
+                                    <a title="Click to see map!" target="_blank" href="https://www.google.com/maps?ll=16.82563,96.12616&z=19&t=m&hl=en&gl=MM&mapclient=embed&cid=3171592208392029217" class="flex justify-center items-center duration-300 border border-red-500 w-10 h-10 md:w-14 md:h-14 text-red-500 shadow-md rounded-md hover:bg-red-500 hover:text-white">
                                         <i class="fa-solid text-xl md:text-2xl fa-location-dot"></i>
                                     </a>
                                 </div>
                                 <div class="">
                                     <h1 class="text-slate-600 dark:text-slate-400 text-sm">Address</h1>
                                     <h1>
-                                        <a title="Click to see map!" href="https://www.google.com/maps?ll=16.82563,96.12616&z=19&t=m&hl=en&gl=MM&mapclient=embed&cid=3171592208392029217" class="font-semibold text-md md:text-lg text-slate-600 dark:text-slate-300 text-[18px] hover:underline duraion-300" >No.10, Linyaungchi Road, Hledan Rd, Yangon</a>
+                                        <a title="Click to see map!" href="https://www.google.com/maps?ll=16.82563,96.12616&z=19&t=m&hl=en&gl=MM&mapclient=embed&cid=3171592208392029217" class="font-semibold text-md md:text-md text-slate-600 dark:text-slate-300 text-md hover:underline duraion-300" >No.10, Linyaungchi Road, Hledan Rd, Yangon</a>
                                     </h1>
                                 </div>
                             </div>
 
                             <div class="flex items-center space-x-4 headline flex-wrap">
-                                <a title="Click to send mail!" href="mailto:eishwesin945@gmail.com" class="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 duration-300 border border-cyan-500 text-cyan-600 hover:bg-cyan-500 hover:text-white  shadow-md rounded-md dark:bg-slate-700">
+                                <a title="Click to send mail!" href="mailto:eishwesin945@gmail.com" class="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 duration-300 border border-cyan-500 text-cyan-600 hover:bg-cyan-500 hover:text-white  shadow-md rounded-md">
                                     <i class="fa-solid text-xl md:text-2xl fa-envelope-open-text"></i>
                                 </a>
                                 <div class="">
                                     <h1 class="text-slate-600 dark:text-slate-400 text-sm">Email</h1>
                                     <h1>
-                                        <a title="Click to send mail!" target="_blank" class="font-semibold text-md md:text-lg text-slate-600 dark:text-slate-300 text-[18px] hover:underline" href="mailto:eishwesin945@gmail.com">eishwesin945@gmail.com</a>
+                                        <a title="Click to send mail!" target="_blank" class="font-semibold text-md md:text-md text-slate-600 dark:text-slate-300 text-md hover:underline" href="mailto:eishwesin945@gmail.com">eishwesin945@gmail.com</a>
                                     </h1>
                                 </div>
                             </div>
                             <div class="flex items-center space-x-4 headline">
-                                <a title="Click to see calendar!" href="https://calendar.google.com/calendar/u/0/r/day/2000/2/4?pli=1" target="" class="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 duration-300 border border-violet-500 text-violet-500 hover:bg-violet-500 hover:text-white  shadow-md rounded-md dark:bg-slate-700">
+                                <a title="Click to see calendar!" href="https://calendar.google.com/calendar/u/0/r/day/2000/2/4?pli=1" target="" class="flex justify-center items-center w-10 h-10 md:w-14 md:h-14 duration-300 border border-violet-500 text-violet-500 hover:bg-violet-500 hover:text-white  shadow-md rounded-md">
                                     <i class="fa-solid text-xl md:text-2xl fa-calendar"></i>
                                 </a>
                                 <div class="">
                                     <h1 class="text-slate-600 dark:text-slate-400 text-sm">Birthday</h1>
                                     <h1>
-                                        <a title="Click to see calendar!" target="_blank" href="https://calendar.google.com/calendar/u/0/r/day/2000/2/4?pli=1" class="font-semibold text-md md:text-lg text-slate-600 dark:text-slate-300 text-[18px] hover:underline" >April 27,2000</a>
+                                        <a title="Click to see calendar!" target="_blank" href="https://calendar.google.com/calendar/u/0/r/day/2000/2/4?pli=1" class="font-semibold text-md md:text-md text-slate-600 dark:text-slate-300 text-md hover:underline" >April 27,2000</a>
                                     </h1>
                                 </d>
                             </div>
@@ -149,8 +155,8 @@
     <!-- content end  -->
 
     <!-- Footer start  -->
-    <footer class="py-5 border-t-[1px] border-slate-300 mt-6">
-        <div class="text-center text-xs md:text-sm text-slate-700 px-3">
+    <footer class="py-5 border-t-[1px] border-slate-300 dark:border-slate-700 mt-6">
+        <div class="text-center text-xs md:text-sm text-slate-700 dark:text-slate-400 px-3">
             <span >
                 Copyright &copy; 2023 All rights reserved | This template is made with <i class="fas fa-heart"></i> by
             </span> 
@@ -160,7 +166,6 @@
         </div>
     </footer>
     <!-- Footer end -->
-
 </body>
 
 <script src="./app.js"></script>
