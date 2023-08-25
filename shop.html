@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
-                        <a href="./">
+                        <a href="./shop.html">
                             Shop
                         </a>
                     </li>
@@ -87,56 +87,204 @@
     <!-- content start -->
     <main class="h-full w-full max-w-6xl mx-auto p-3 md:px-5 lg:px-10  md:py-5 lg:py-5 mt-12 md:mt-20">
 
-        <section class="flex flex-col-reverse md:grid md:grid-cols-2 py-10">
-            
-            <article class="flex items-center mt-10 md:mt-0">
-                <div class="">
-                    <h1 class="text-clate-700 dark:text-slate-300 text-2xl md:text-3xl lg:text-4xl font-bold max-w-lg">
-                        Hello,I'm Designer.
-                    </h1>
-                    <p class="mt-5 text-slate-500 dark:text-slate-400 max-w-lg text-md lg:text-lg ">
-                        I'm founder of "<span class="text-blue-500 font-semibold font-xl">Fashion Force</span>".Beginning in 2012, I've been actively involved in 'Fashion Force' until the present moment.
-                    </p>
-
-                    <div class="mt-5 lg:mt-8 flex items-center gap-x-4 lg:gap-x-6">
-                        <a href="./contact.html" class=" getInTouchBtn inline-block bg-blue-400 hover:bg-blue-500 duration-300 text-white px-3 lg:px-5 py-2 rounded-xl shadow-lg text-md lg:text-lg font-semibold">
-                            Get in touch
-                            <i class="fas fa-arrow-right text-sm"></i>
-                        </a>
-                        <div class="flex items-center gap-x-2">
-                            <a target="_blank" title="Facebook" href="https://www.facebook.com/eishwe.sin.5095" class="w-9 h-9 lg:w-10 lg:h-10 hover:rotate-[360deg] flex justify-center items-center rounded-full shadow-md bg-blue-400 hover:bg-blue-500 duration-300 text-white">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-
-                            <a target="_blank" title="Messenger" href="" class="w-9 h-9 lg:w-10 lg:h-10 hover:rotate-[360deg] flex justify-center items-center rounded-full shadow-md bg-violet-400 hover:bg-violet-500 duration-300 text-white">
-                                <i class="fab fa-facebook-messenger"></i>
-                            </a>
-
-                            <a target="_blank" title="Linkin" href="" class="w-9 h-9 lg:w-10 lg:h-10 hover:rotate-[360deg] flex justify-center items-center rounded-full shadow-md bg-cyan-400 hover:bg-cyan-500 duration-300 text-white">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-
-                            <a target="_blank" title="Instagram" href="" class="w-9 h-9 lg:w-10 lg:h-10 hover:rotate-[360deg] flex justify-center items-center rounded-full shadow-md bg-pink-400 hover:bg-pink-500 duration-300 text-white">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
+        <section class="flex justify-between items-center mt-10">
+            <article>
+                <select class="px-2 md:px-3 py-1 text-sm md:text-lg bg-blue-500/80 hover:bg-blue-500 cursor-pointer text-white rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 duration-300" name="categories" id="categories">
+                    <option value="">Categories</option>
+                    <option value="">Shirts</option>
+                    <option value="">Pants</option>
+                    <option value="">Socks</option>
+                </select>
             </article>
 
-            <article class="flex justify-center items-center">
-                <div class="md:hidden rounded-full w-[250px] h-[250px] md:w-[350px] md:h-[350px] border overflow-hidden shadow-lg ">
-                    <img class=" w-full h-full object-cover object-center " src="https://scontent-sin6-4.xx.fbcdn.net/v/t39.30808-6/278542209_1613512349021183_8012774448977989719_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFW6bnZUFl_eh2fq9OG1u-PTwNUTndMa2tPA1ROd0xraylSM4W6QSjFZ9KR9aB34c2Oewv79OV6L-m5K6tu4cpH&_nc_ohc=9ipBnGgdXSsAX84dtNP&_nc_ht=scontent-sin6-4.xx&oh=00_AfCJB9MpRHtnD75LrRPbXOPoJk43b4XKAIOkLtr0hoBH6Q&oe=64E70F1B" alt=""> 
-                </div>
-
-                <div class="hidden md:block relative w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]  shadow-lg before:absolute before:w-full before:h-full before:bg-gradient-to-r from-blue-300 to-blue-600 backdrop-blur-xl before:rounded-lg before:-z-10 rounded-lg before:translate-x-6 before:translate-y-6 lg:before:translate-x-8 lg:before:translate-y-8 before:opacity-50 ">
-                    <div class="rounded-lg overflow-hidden shadow-2xl">
-                        <img class="z-10 w-full h-full object-cover object-center " src="https://scontent-sin6-4.xx.fbcdn.net/v/t39.30808-6/278542209_1613512349021183_8012774448977989719_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFW6bnZUFl_eh2fq9OG1u-PTwNUTndMa2tPA1ROd0xraylSM4W6QSjFZ9KR9aB34c2Oewv79OV6L-m5K6tu4cpH&_nc_ohc=9ipBnGgdXSsAX84dtNP&_nc_ht=scontent-sin6-4.xx&oh=00_AfCJB9MpRHtnD75LrRPbXOPoJk43b4XKAIOkLtr0hoBH6Q&oe=64E70F1B" alt=""> 
-                    </div>
+            <article>
+                <div class="flex items-center">
+                    <input class="focus:ring-1 focus:ring-blue-400/50 text-slate-800 focus:outline-none duration-300 text-sm md:text-md w-full border border-slate-500/50 px-2 py-1 md:px-3 md:py-2 rounded-l-lg shadow-md dark:bg-slate-800 dark:text-slate-300" type="text" id="search" name="key" placeholder="Search">
+                    <button onclick="showPass('password','showBtnOne')" type="button" id="showBtnOne" class="text-white duration-200 bg-blue-400 hover:bg-blue-500/80 flex justify-center items-center rounded-r-lg w-8 md:w-10 h-8 md:h-10 shadow-lg">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </div>
             </article>
         </section>
+
+       <section class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 lg:gap-8 mt-10">
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-800 border border-slate-300 dark:border-slate-700">
+            <div class="overflow-hidden max-h-[100px] md max-h-[100px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/564x/f8/e5/65/f8e5650e1e69717c7b56e706a345cb2b.jpg" alt="">
+            </div>
+            <div class="p-3 lg:p-4">
+                <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                    Addias shoe for men
+                </h1>
+                <h3 class="text-slate-800 text-md text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-slate-300">
+                    $12(5000ks)
+                </h3>
+                <div class="md:flex justify-between items-center-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-sm md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <button type="submit" class="cursor-pointer w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center">
+                            <i class="fas fa-eye text-xs md:text-sm"></i>
+                        </button>
+                        <button type="submit" class="cursor-pointer w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full shadow-md bg-red-500 text-white hover:bg-red-600/90  focus:ring-2 focus:ring-red-500 duration-200 duration-300 text-blue-500  flex justify-center items-center">
+                            <i class="fas fa-shopping-cart text-sm md:text-md "></i> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-800 border border-slate-300 dark:border-slate-700">
+            <div class="overflow-hidden max-h-[100px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/736x/cf/07/69/cf0769a630771e0a34b76991dc65ecdc.jpg" alt="">
+            </div>
+            <div class="p-3 lg:p-4">
+                <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                    Addias shoe for men
+                </h1>
+                <h3 class="text-slate-800 text-md text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-slate-300">
+                    $12(5000ks)
+                </h3>
+                <div class="md:flex justify-between items-center-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-sm md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <button type="submit" class="cursor-pointer w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center">
+                            <i class="fas fa-eye text-xs md:text-sm"></i>
+                        </button>
+                        <button type="submit" class="cursor-pointer w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full shadow-md bg-red-500 text-white hover:bg-red-600/90  focus:ring-2 focus:ring-red-500 duration-200 duration-300 text-blue-500  flex justify-center items-center">
+                            <i class="fas fa-shopping-cart text-sm md:text-md"></i> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-800 border border-slate-300 dark:border-slate-700">
+            <div class="overflow-hidden max-h-[100px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/564x/a8/0f/9b/a80f9bb426356ac930700548f1ae3da9.jpg" alt="">
+            </div>
+            <div class="p-3 lg:p-4">
+                <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                    Addias shoe for men
+                </h1>
+                <h3 class="text-slate-800 text-md text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-slate-300">
+                    $12(5000ks)
+                </h3>
+                <div class="md:flex justify-between items-center-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-sm md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <button type="submit" class="cursor-pointer w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center">
+                            <i class="fas fa-eye text-xs md:text-sm"></i>
+                        </button>
+                        <button type="submit" class="cursor-pointer w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full shadow-md bg-red-500 text-white hover:bg-red-600/90  focus:ring-2 focus:ring-red-500 duration-200 duration-300 text-blue-500  flex justify-center items-center">
+                            <i class="fas fa-shopping-cart text-sm md:text-md"></i> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-800 border border-slate-300 dark:border-slate-700">
+            <div class="overflow-hidden max-h-[100px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/736x/b8/82/98/b88298eda10afa6798c693c0f753bfd3.jpg" alt="">
+            </div>
+            <div class="p-3 lg:p-4">
+                <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                    Addias shoe for men
+                </h1>
+                <h3 class="text-slate-800 text-md text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-slate-300">
+                    $12(5000ks)
+                </h3>
+                <div class="md:flex justify-between items-center-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-sm md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <button type="submit" class="cursor-pointer w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center">
+                            <i class="fas fa-eye text-xs md:text-sm"></i>
+                        </button>
+                        <button type="submit" class="cursor-pointer w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full shadow-md bg-red-500 text-white hover:bg-red-600/90  focus:ring-2 focus:ring-red-500 duration-200 duration-300 text-blue-500  flex justify-center items-center">
+                            <i class="fas fa-shopping-cart text-sm md:text-md"></i> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-800 border border-slate-300 dark:border-slate-700">
+            <div class="overflow-hidden max-h-[100px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/564x/ca/ae/f3/caaef3b63cde3ec1495d2bff19597025.jpg" alt="">
+            </div>
+            <div class="p-3 lg:p-4">
+                <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                    Addias shoe for men
+                </h1>
+                <h3 class="text-slate-800 text-md text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-slate-300">
+                    $12(5000ks)
+                </h3>
+                <div class="md:flex justify-between items-center-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-sm md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <button type="submit" class="cursor-pointer w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center">
+                            <i class="fas fa-eye text-xs md:text-sm"></i>
+                        </button>
+                        <button type="submit" class="cursor-pointer w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full shadow-md bg-red-500 text-white hover:bg-red-600/90  focus:ring-2 focus:ring-red-500 duration-200 duration-300 text-blue-500  flex justify-center items-center">
+                            <i class="fas fa-shopping-cart text-sm md:text-md"></i> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-800 border border-slate-300 dark:border-slate-700">
+            <div class="overflow-hidden max-h-[100px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/564x/2e/d6/e7/2ed6e77a66b356376c5b63c7fee269e8.jpg" alt="">
+            </div>
+            <div class="p-3 lg:p-4">
+                <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                    Addias shoe for men
+                </h1>
+                <h3 class="text-slate-800 text-md text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-slate-300">
+                    $12(5000ks)
+                </h3>
+                <div class="md:flex justify-between items-center-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-sm md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <button type="submit" class="cursor-pointer w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center">
+                            <i class="fas fa-eye text-xs md:text-sm"></i>
+                        </button>
+                        <button type="submit" class="cursor-pointer w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full shadow-md bg-red-500 text-white hover:bg-red-600/90  focus:ring-2 focus:ring-red-500 duration-200 duration-300 text-blue-500  flex justify-center items-center">
+                            <i class="fas fa-shopping-cart text-sm md:text-md"></i> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+
+        
+       </section>
 
     </main>
     <!-- content end  -->
