@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="h-fill-available">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Force</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- {{-- dark mode  --}} -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+
+
+<style>
+    .getInTouchBtn:hover .getInTouchBtn .fa-arrow-right{
+        transform: translateX(5px);
+    }
+</style>
+
+</head>
+
+<body class="font-sans flex flex-col justify-between min-h-screen dark:bg-slate-900">
+
+    <!-- Header start -->
+    <header class="shadow-md fixed bg-white top-0 left-0 w-full z-50 dark:bg-slate-900">
+        <section class="flex justify-between items-center max-w-6xl mx-auto p-3 md:px-5 lg:px-10 md:py-5 lg:py-5">
+            <article>
+                <a href="./index.html" class="text-xl md:text-2xl font-bold ">
+                    <span class="text-blue-500">
+                        Fashion
+                    </span>
+                    <span class="text-slate-800 dark:text-slate-300">
+                        Force
+                    </span>
+                </a>
+            </article>
+            <article class="aside dark:bg-slate-900 duration-300 absolute md:static top-0 -left-full bg-white w-[55%] md:w-auto md:h-auto h-screen shadow-xl md:shadow-none flex md:block justify-center items-center flex-col">
+                <ul class="flex-col md:flex-row flex items-center gap-y-8 md:gap-x-4 lg:gap-x-10 text-sm md:text-md font-medium text-slate-700 dark:text-slate-200 dark:bg-slate-900">
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./about.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./shop.html">
+                            Shop
+                        </a>
+                    </li>
+                    <li class="border-b-2 border-b-transparent hover:border-blue-500 duration-300">
+                        <a href="./contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            
+            <article class="text-md flex items-center gap-x-3">
+
+                <!-- Dark mode  -->
+                <button title="Change to dark mode." onclick="toggleTheme()" id="darkBtn"  class="cursor-pointer">
+                    <svg class="scale-[0.7] md:sclae-100 w-8 h-8 xl:w-9 xl:h-9" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 256 256"><path fill="currentColor" d="M116 32V16a12 12 0 0 1 24 0v16a12 12 0 0 1-24 0Zm80 96a68 68 0 1 1-68-68a68.07 68.07 0 0 1 68 68Zm-24 0a44 44 0 1 0-44 44a44.05 44.05 0 0 0 44-44ZM51.51 68.49a12 12 0 1 0 17-17l-12-12a12 12 0 0 0-17 17Zm0 119l-12 12a12 12 0 0 0 17 17l12-12a12 12 0 1 0-17-17ZM196 72a12 12 0 0 0 8.49-3.51l12-12a12 12 0 0 0-17-17l-12 12A12 12 0 0 0 196 72Zm8.49 115.51a12 12 0 0 0-17 17l12 12a12 12 0 0 0 17-17ZM44 128a12 12 0 0 0-12-12H16a12 12 0 0 0 0 24h16a12 12 0 0 0 12-12Zm84 84a12 12 0 0 0-12 12v16a12 12 0 0 0 24 0v-16a12 12 0 0 0-12-12Zm112-96h-16a12 12 0 0 0 0 24h16a12 12 0 0 0 0-24Z"/></svg>
+                </button>
+
+                <button class="showBtn duration-300 flex md:hidden justify-center items-center w-8 h-8 bg-blue-500/80 rounded-full">
+                    <i class="fas fa-bars text-white text-sm"></i>
+                </button>
+
+                <a href="./login.html" class="hidden md:block bg-blue-500/80 rounded-full text-white px-5 py-[5px] shadow-md duration-300 hover:bg-blue-600/80">
+                    Login
+                </a>
+            </article>
+        </section>
+    </header>
+    <!--  -->
+
+    <!-- content start -->
+    <main class="h-full w-full max-w-6xl mx-auto p-3 md:px-5 lg:px-10  md:py-5 lg:py-5 mt-12 md:mt-20">
+
+        <!-- <section class="flex justify-between items-center mt-10">
+            <article>
+                <select class="px-2 md:px-3 py-1 text-sm md:text-lg bg-blue-500/80 hover:bg-blue-500 cursor-pointer text-white rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 duration-300" name="categories" id="categories">
+                    <option value="">Categories</option>
+                    <option value="">Shirts</option>
+                    <option value="">Pants</option>
+                    <option value="">Socks</option>
+                </select>
+            </article>
+        </section> -->
+
+       <section class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 lg:gap-8 mt-10">
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-900/90 border border-slate-300 dark:border-slate-700">
+            <a href="./img/shoe.jpg" target="_blank" class="overflow-hidden max-h-[100px] md max-h-[150px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/564x/f8/e5/65/f8e5650e1e69717c7b56e706a345cb2b.jpg" alt="">
+            </a>
+            <div class="p-3 lg:p-4">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                        ရင်ဖုံး
+                    </h1>
+                    <h3 class="text-yellow-500 text-sm text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-yellow-300">
+                        5000ks
+                    </h3>
+                </div>
+                <div class="flex  justify-between items-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-xs md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <a href="./img/shoe.jpg" download class="cursor-pointer px-2 py-1 rounded-md shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center text-xs md:text-sm lg:text-md">
+                            Save
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-900/90 border border-slate-300 dark:border-slate-700">
+            <a href="./img/shoe.jpg" target="_blank" class="overflow-hidden max-h-[100px] md max-h-[150px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/564x/f8/e5/65/f8e5650e1e69717c7b56e706a345cb2b.jpg" alt="">
+            </a>
+            <div class="p-3 lg:p-4">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                        ရင်ဖုံး
+                    </h1>
+                    <h3 class="text-yellow-500 text-sm text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-yellow-300">
+                        5000ks
+                    </h3>
+                </div>
+                <div class="flex  justify-between items-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-xs md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <a href="./img/shoe.jpg" download class="cursor-pointer px-2 py-1 rounded-md shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center text-xs md:text-sm lg:text-md">
+                            Save
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-900/90 border border-slate-300 dark:border-slate-700">
+            <a href="./img/shoe.jpg" target="_blank" class="overflow-hidden max-h-[100px] md max-h-[150px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/564x/f8/e5/65/f8e5650e1e69717c7b56e706a345cb2b.jpg" alt="">
+            </a>
+            <div class="p-3 lg:p-4">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                        ရင်ဖုံး
+                    </h1>
+                    <h3 class="text-yellow-500 text-sm text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-yellow-300">
+                        5000ks
+                    </h3>
+                </div>
+                <div class="flex  justify-between items-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-xs md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <a href="./img/shoe.jpg" download class="cursor-pointer px-2 py-1 rounded-md shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center text-xs md:text-sm lg:text-md">
+                            Save
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-900/90 border border-slate-300 dark:border-slate-700">
+            <a href="./img/shoe.jpg" target="_blank" class="overflow-hidden max-h-[100px] md max-h-[150px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/564x/f8/e5/65/f8e5650e1e69717c7b56e706a345cb2b.jpg" alt="">
+            </a>
+            <div class="p-3 lg:p-4">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                        ရင်ဖုံး
+                    </h1>
+                    <h3 class="text-yellow-500 text-sm text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-yellow-300">
+                        5000ks
+                    </h3>
+                </div>
+                <div class="flex  justify-between items-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-xs md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <a href="./img/shoe.jpg" download class="cursor-pointer px-2 py-1 rounded-md shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center text-xs md:text-sm lg:text-md">
+                            Save
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-900/90 border border-slate-300 dark:border-slate-700">
+            <a href="./img/shoe.jpg" target="_blank" class="overflow-hidden max-h-[100px] md max-h-[150px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/564x/f8/e5/65/f8e5650e1e69717c7b56e706a345cb2b.jpg" alt="">
+            </a>
+            <div class="p-3 lg:p-4">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                        ရင်ဖုံး
+                    </h1>
+                    <h3 class="text-yellow-500 text-sm text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-yellow-300">
+                        5000ks
+                    </h3>
+                </div>
+                <div class="flex  justify-between items-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-xs md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <a href="./img/shoe.jpg" download class="cursor-pointer px-2 py-1 rounded-md shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center text-xs md:text-sm lg:text-md">
+                            Save
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-900/90 border border-slate-300 dark:border-slate-700">
+            <a href="./img/shoe.jpg" target="_blank" class="overflow-hidden max-h-[100px] md max-h-[150px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/564x/f8/e5/65/f8e5650e1e69717c7b56e706a345cb2b.jpg" alt="">
+            </a>
+            <div class="p-3 lg:p-4">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                        ရင်ဖုံး
+                    </h1>
+                    <h3 class="text-yellow-500 text-sm text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-yellow-300">
+                        5000ks
+                    </h3>
+                </div>
+                <div class="flex  justify-between items-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-xs md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <a href="./img/shoe.jpg" download class="cursor-pointer px-2 py-1 rounded-md shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center text-xs md:text-sm lg:text-md">
+                            Save
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-900/90 border border-slate-300 dark:border-slate-700">
+            <a href="./img/shoe.jpg" target="_blank" class="overflow-hidden max-h-[100px] md max-h-[150px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/564x/f8/e5/65/f8e5650e1e69717c7b56e706a345cb2b.jpg" alt="">
+            </a>
+            <div class="p-3 lg:p-4">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                        ရင်ဖုံး
+                    </h1>
+                    <h3 class="text-yellow-500 text-sm text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-yellow-300">
+                        5000ks
+                    </h3>
+                </div>
+                <div class="flex  justify-between items-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-xs md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <a href="./img/shoe.jpg" download class="cursor-pointer px-2 py-1 rounded-md shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center text-xs md:text-sm lg:text-md">
+                            Save
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+
+        <!-- card start -->
+        <article class="rounded-xl shadow-lg overflow-hidden dark:bg-slate-900/90 border border-slate-300 dark:border-slate-700">
+            <a href="./img/shoe.jpg" target="_blank" class="overflow-hidden max-h-[100px] md max-h-[150px] md:max-h-[150px] lg:max-h-[200px] flex justif-center items-center ">
+                <img loading="lazy" class="cursor-pointer hover:scale-[1.1] duration-300 w-full h-full object-cover object-center " src="https://i.pinimg.com/564x/f8/e5/65/f8e5650e1e69717c7b56e706a345cb2b.jpg" alt="">
+            </a>
+            <div class="p-3 lg:p-4">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-slate-600 dark:text-slate-400 text-sm md:text-lg font-semibold text-center md:text-left">
+                        ရင်ဖုံး
+                    </h1>
+                    <h3 class="text-yellow-500 text-sm text-center md:text-left md:text-xl lg:text-2xl font-medium mt-1 dark:text-yellow-300">
+                        5000ks
+                    </h3>
+                </div>
+                <div class="flex  justify-between items-center mt-1 md:mt-3 lg:mt-5 text-slate-700 dark:text-slate-300">
+                    <h3 class="text-center md:text-left text-xs md:text-md">
+                        Instock - 5
+                    </h3>
+                    <div class="flex items-center gap-x-2 justify-center md:justify-start mt-2 md:mt-0">
+                        <a href="./img/shoe.jpg" download class="cursor-pointer px-2 py-1 rounded-md shadow-md bg-blue-500 text-white hover:bg-blue-600/90 focus:ring-2 focus:ring-blue-500 duration-200 duration-300 text-blue-500  flex justify-center items-center text-xs md:text-sm lg:text-md">
+                            Save
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- card end  -->
+        
+       </section>
+
+    </main>
+    <!-- content end  -->
+
+    <!-- Footer start  -->
+    <footer class="py-2 md:py-5 border-t-[1px] border-slate-300 dark:border-slate-700 mt-6">
+        <div class="text-center text-xs md:text-sm text-slate-700 dark:text-slate-400 px-3">
+            <span >
+                Copyright &copy; 2023 All rights reserved | This template is made with <i class="fas fa-heart"></i> by
+            </span> 
+            <a target="_blank" href="https://portfolio-haru2004github.vercel.app/" class=" text-sm md:text-lg border-b-2 border-b-transparent hover:border-b-blue-500 duration-300 font-semibold text-blue-500">
+                Bone Pyae Sone
+            </a>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+</body>
+<script src="./app.js"></script>
+</html>
+
